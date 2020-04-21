@@ -1,30 +1,17 @@
 Arguments: 
-  /usr/local/bin/node /home/gdubs/.yarn/bin/yarn.js add CodyWebpackPlugin --dev
+  C:\Program Files\nodejs\node.exe C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
 
 PATH: 
-  /home/gdubs/.yarn/bin:/home/gdubs/.config/yarn/global/node_modules/.bin:/media/gdubs/Extension1/applications/anaconda3/bin:/media/gdubs/Extension1/applications/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\GabrielRubrico\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\GabrielRubrico\AppData\Local\Programs\Python\Python37\;C:\Users\GabrielRubrico\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Users\GabrielRubrico\AppData\Roaming\npm;C:\Users\GabrielRubrico\.dotnet\tools;C:\Users\GabrielRubrico\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
 
 Yarn version: 
-  1.22.4
+  1.5.1
 
 Node version: 
-  10.19.0
+  10.9.0
 
 Platform: 
-  linux x64
-
-Trace: 
-  Error: https://registry.yarnpkg.com/CodyWebpackPlugin: Not found
-      at Request.params.callback [as _callback] (/home/gdubs/.yarn/lib/cli.js:66987:18)
-      at Request.self.callback (/home/gdubs/.yarn/lib/cli.js:140748:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/home/gdubs/.yarn/lib/cli.js:141720:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/home/gdubs/.yarn/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1145:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  win32 x64
 
 npm manifest: 
   {
@@ -34,7 +21,7 @@ npm manifest:
     "main": "index.js",
     "scripts": {
       "start": "webpack-dev-server --mode development --open --hot",
-      "test" : "jest --watchAll"
+      "test": "jest --watchAll"
     },
     "author": "",
     "license": "ISC",
@@ -47,8 +34,11 @@ npm manifest:
       "@babel/preset-env": "^7.9.5",
       "@babel/preset-react": "^7.9.4",
       "babel-loader": "^8.1.0",
+      "copy-webpack-plugin": "^5.1.1",
+      "file-loader": "^6.0.0",
       "html-webpack-plugin": "^4.2.0",
       "jest": "^25.4.0",
+      "url-loader": "^4.1.0",
       "webpack": "^4.42.1",
       "webpack-cli": "^3.3.11",
       "webpack-dev-server": "^3.10.3"
@@ -1997,7 +1987,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
     integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
   
-  cacache@^12.0.2:
+  cacache@^12.0.2, cacache@^12.0.3:
     version "12.0.4"
     resolved "https://registry.yarnpkg.com/cacache/-/cacache-12.0.4.tgz#668bcbd105aeb5f1d92fe25570ec9525c8faa40c"
     integrity sha512-a0tMB40oefvuInr4Cwb3GerbL9xTj1D5yg0T5xrjGCGyfvbxseIXX7BAO/u/hIXdafzOI5JC3wDwHyf24buOAQ==
@@ -2343,6 +2333,24 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
     integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
   
+  copy-webpack-plugin@^5.1.1:
+    version "5.1.1"
+    resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-5.1.1.tgz#5481a03dea1123d88a988c6ff8b78247214f0b88"
+    integrity sha512-P15M5ZC8dyCjQHWwd4Ia/dm0SgVvZJMYeykVIVYXbGyqO4dWB5oyPHp9i7wjwo5LhtlhKbiBCdS2NvM07Wlybg==
+    dependencies:
+      cacache "^12.0.3"
+      find-cache-dir "^2.1.0"
+      glob-parent "^3.1.0"
+      globby "^7.1.1"
+      is-glob "^4.0.1"
+      loader-utils "^1.2.3"
+      minimatch "^3.0.4"
+      normalize-path "^3.0.0"
+      p-limit "^2.2.1"
+      schema-utils "^1.0.0"
+      serialize-javascript "^2.1.2"
+      webpack-log "^2.0.0"
+  
   core-js-compat@^3.6.2:
     version "3.6.5"
     resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.6.5.tgz#2a51d9a4e25dfd6e690251aa81f99e3c05481f1c"
@@ -2631,6 +2639,13 @@ Lockfile:
       bn.js "^4.1.0"
       miller-rabin "^4.0.0"
       randombytes "^2.0.0"
+  
+  dir-glob@^2.0.0:
+    version "2.2.2"
+    resolved "https://registry.yarnpkg.com/dir-glob/-/dir-glob-2.2.2.tgz#fa09f0694153c8918b18ba0deafae94769fc50c4"
+    integrity sha512-f9LBi5QWzIW3I6e//uxZoLBlUt9kcp66qo0sSCxL6YZKc75R1c4MFCoe/LaZiBGmgujvQdxc5Bn3QhfyvK5Hsw==
+    dependencies:
+      path-type "^3.0.0"
   
   dns-equal@^1.0.0:
     version "1.0.0"
@@ -3135,6 +3150,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
     integrity sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==
   
+  file-loader@^6.0.0:
+    version "6.0.0"
+    resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-6.0.0.tgz#97bbfaab7a2460c07bcbd72d3a6922407f67649f"
+    integrity sha512-/aMOAYEFXDdjG0wytpTL5YQLfZnnTmLNjn+AIrJ/6HVnTfDqLsVKUUwkDf4I4kgex36BvjuXEn/TX9B/1ESyqQ==
+    dependencies:
+      loader-utils "^2.0.0"
+      schema-utils "^2.6.5"
+  
   file-uri-to-path@1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
@@ -3415,6 +3438,18 @@ Lockfile:
       object-assign "^4.0.1"
       pify "^2.0.0"
       pinkie-promise "^2.0.0"
+  
+  globby@^7.1.1:
+    version "7.1.1"
+    resolved "https://registry.yarnpkg.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
+    integrity sha1-+yzP+UAfhgCUXfral0QMypcrhoA=
+    dependencies:
+      array-union "^1.0.1"
+      dir-glob "^2.0.0"
+      glob "^7.1.2"
+      ignore "^3.3.5"
+      pify "^3.0.0"
+      slash "^1.0.0"
   
   graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.3:
     version "4.2.3"
@@ -3703,6 +3738,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
     integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
   
+  ignore@^3.3.5:
+    version "3.3.10"
+    resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
+    integrity sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
+  
   import-local@2.0.0, import-local@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/import-local/-/import-local-2.0.0.tgz#55070be38a5993cf18ef6db7e961f5bee5c5a09d"
@@ -3933,7 +3973,7 @@ Lockfile:
     dependencies:
       is-extglob "^2.1.0"
   
-  is-glob@^4.0.0:
+  is-glob@^4.0.0, is-glob@^4.0.1:
     version "4.0.1"
     resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
     integrity sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
@@ -4645,6 +4685,15 @@ Lockfile:
       emojis-list "^3.0.0"
       json5 "^1.0.1"
   
+  loader-utils@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+    integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+    dependencies:
+      big.js "^5.2.2"
+      emojis-list "^3.0.0"
+      json5 "^2.1.2"
+  
   locate-path@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -4846,7 +4895,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.43.0.tgz#0a12e0502650e473d735535050e7c8f4eb4fae58"
     integrity sha512-+5dsGEEovYbT8UY9yD7eE4XTc4UwJ1jBYlgaQQF38ENsKR3wj/8q8RFZrF9WIZpB2V1ArTVFUva8sAul1NzRzQ==
   
-  mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
+  mime-types@^2.1.12, mime-types@^2.1.26, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
     version "2.1.26"
     resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.26.tgz#9c921fc09b7e149a65dfdc0da4d20997200b0a06"
     integrity sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ==
@@ -5296,7 +5345,7 @@ Lockfile:
     dependencies:
       p-try "^1.0.0"
   
-  p-limit@^2.0.0, p-limit@^2.2.0:
+  p-limit@^2.0.0, p-limit@^2.2.0, p-limit@^2.2.1:
     version "2.3.0"
     resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
     integrity sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
@@ -5468,6 +5517,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
     integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
   
+  path-type@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
+    integrity sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==
+    dependencies:
+      pify "^3.0.0"
+  
   pbkdf2@^3.0.3:
     version "3.0.17"
     resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.17.tgz#976c206530617b14ebb32114239f7b09336e93a6"
@@ -5493,6 +5549,11 @@ Lockfile:
     version "2.3.0"
     resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
     integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
+  
+  pify@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
+    integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
   
   pify@^4.0.1:
     version "4.0.1"
@@ -6293,6 +6354,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
     integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
   
+  slash@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+    integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
+  
   slash@^3.0.0:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
@@ -6991,6 +7057,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
     integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
   
+  url-loader@^4.1.0:
+    version "4.1.0"
+    resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-4.1.0.tgz#c7d6b0d6b0fccd51ab3ffc58a78d32b8d89a7be2"
+    integrity sha512-IzgAAIC8wRrg6NYkFIJY09vtktQcsvU8V6HhtQj9PTefbYImzLB1hufqo4m+RyM5N3mLx5BqJKccgxJS+W3kqw==
+    dependencies:
+      loader-utils "^2.0.0"
+      mime-types "^2.1.26"
+      schema-utils "^2.6.5"
+  
   url-parse@^1.4.3:
     version "1.4.7"
     resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
@@ -7470,3 +7545,13 @@ Lockfile:
       which-module "^2.0.0"
       y18n "^4.0.0"
       yargs-parser "^18.1.1"
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at checkOne (C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:62444:11)
+      at Object.check (C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:62463:5)
+      at C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:22803:73
+      at Generator.next (<anonymous>)
+      at step (C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\GabrielRubrico\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13

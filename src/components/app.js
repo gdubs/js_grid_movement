@@ -19,24 +19,21 @@ const App = props => {
             var newCell = 0;
             var newRow = 0;
 
-            setCurPos({...curPos, cell: newCell});
-
-
             switch(keyCode){
                 case 37:
-                    newCell = currCell == minCell ? minCell : currCell - 1;
+                    newCell = (currCell == minCell || currCell < 0) ? minCell : currCell - 1;
                     setCurPos({...curPos, cell: newCell});
                     break;
                 case 38:
-                    newRow = currRow == minRow ? minRow : currRow - 1;
+                    newRow = (currRow == minRow || currRow < 0)? minRow : currRow - 1;
                     setCurPos({...curPos, row: newRow});
                     break;
                 case 39:
-                    newCell = currCell == maxCell ? maxCell : currCell + 1;
+                    newCell = (currCell == maxCell || currCell > maxCell) ? maxCell : currCell + 1;
                     setCurPos({...curPos, cell: newCell});
                     break;
                 case 40:
-                    newRow = currRow == maxRow ? maxRow : currRow + 1;
+                    newRow = (currRow == maxRow || currRow > maxRow) ? maxRow : currRow + 1;
                     setCurPos({...curPos, row: newRow});
                     break;
                 default:
